@@ -4,18 +4,15 @@
     "ghcr.io/devcontainers/features/java:1": {
       "version": "latest",
       "installGradle": true,
-      "installMaven": true,
-      "installGroovy": true
-    },
-    "ghcr.io/devcontainers/features/groovy:latest": {}
+      "installMaven": true
+    }
   },
   "customizations": {
     "vscode": {
       "extensions": [
         "vscjava.vscode-java-pack",
         "vscjava.vscode-maven",
-        "vscjava.vscode-gradle",
-        "groovy-language-server.groovy-language-server" ]
+        "vscjava.vscode-gradle" ]
     }
   },  
   "postCreateCommand": "java -version && mvn -version && gradle -version && groovy --version"
